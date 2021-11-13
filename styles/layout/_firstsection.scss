@@ -1,0 +1,33 @@
+.service__cotainer {
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    .text {
+      font-size: clamp(0.75rem, 3vw, 1.25rem);
+      inline-size: 17rem;
+      overflow-wrap: break-word;
+      margin-left: 2rem;
+      line-height: 1.5;
+      padding-bottom: 2rem;
+    }
+  }
+}
+@media screen and (min-width: 786px) {
+  .service__cotainer {
+    margin-top: 5rem;
+    justify-content: space-around;
+    &__image {
+      background: url("../../image/firstSectionIMG.jpg") no-repeat center center;
+      width: 40vw;
+      height: 80vh;
+    }
+  }
+  .text {
+    inline-size: 25rem !important;
+  }
+}

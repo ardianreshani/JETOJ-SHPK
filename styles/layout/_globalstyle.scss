@@ -1,0 +1,16 @@
+.subtile {
+  display: flex;
+  align-items: center;
+  padding-bottom: 0.5rem;
+  h2 {
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    margin-left: 0.5rem;
+  }
+}
+.circle {
+  display: block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+}
