@@ -199,7 +199,7 @@ nav ul li a {
 
 .hero__container__image {
   position: relative;
-  background: url("../../image/herov2.jpg") no-repeat center center;
+  background: url("image/herov2.jpg") no-repeat center center;
   width: 100vw;
   height: 80vh;
   z-index: 1;
@@ -323,5 +323,19 @@ nav ul li a {
   .text {
     inline-size: 25rem !important;
   }
+}
+
+.whyus__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.whyus__container__items {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */
