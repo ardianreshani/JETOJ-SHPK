@@ -435,7 +435,7 @@ nav ul li a {
       grid-row-start: 1;
   -ms-grid-column: 1;
       grid-column-start: 1;
-  background: url("../../image/gallery1.jpg") no-repeat center/cover;
+  background: url("../image/gallery1.jpg") no-repeat center/cover;
   width: 100%;
   height: 100%;
   grid-row-end: 2;
@@ -443,7 +443,7 @@ nav ul li a {
 }
 
 .gallery__container .item2 {
-  background: url("../../image/gallery2.jpg") no-repeat center/cover;
+  background: url("../image/gallery2.jpg") no-repeat center/cover;
   width: 100%;
   height: 100%;
   -ms-grid-row: 2;
@@ -455,7 +455,7 @@ nav ul li a {
 }
 
 .gallery__container .item3 {
-  background: url("../../image/gallery3.jpg") no-repeat center/cover;
+  background: url("../image/gallery3.jpg") no-repeat center/cover;
   width: 100%;
   height: 100%;
   -ms-grid-row: 3;
@@ -467,7 +467,7 @@ nav ul li a {
 }
 
 .gallery__container .item4 {
-  background: url("../../image/gallery4.jpg") no-repeat center/cover;
+  background: url("../image/gallery4.jpg") no-repeat center/cover;
   width: 100%;
   height: 100%;
   -ms-grid-row: 1;
@@ -479,7 +479,7 @@ nav ul li a {
 }
 
 .gallery__container .item5 {
-  background: url("../../image/whyusIMG2.jpg") no-repeat center/cover;
+  background: url("../image/whyusIMG2.jpg") no-repeat center/cover;
   width: 100%;
   height: 100%;
   -ms-grid-row: 1;
@@ -491,7 +491,7 @@ nav ul li a {
 }
 
 .gallery__container .item6 {
-  background: url("../../image/firstSectionIMG.jpg") no-repeat center/cover;
+  background: url("../image/firstSectionIMG.jpg") no-repeat center/cover;
   width: 100%;
   height: 100%;
   -ms-grid-row: 3;
@@ -519,7 +519,6 @@ nav ul li a {
   .item4,
   .item5,
   .item6 {
-    height: 33vh;
     margin-bottom: 0.5rem;
   }
 }
