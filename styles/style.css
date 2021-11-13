@@ -53,6 +53,11 @@ html {
   background-color: var(--primary-color);
 }
 
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -199,7 +204,7 @@ nav ul li a {
 
 .hero__container__image {
   position: relative;
-  background: url("image/herov2.jpg") no-repeat center center;
+  background: url("../image/herov2.jpg") no-repeat center center;
   width: 100vw;
   height: 80vh;
   z-index: 1;
@@ -316,7 +321,7 @@ nav ul li a {
         justify-content: space-around;
   }
   .service__cotainer__image {
-    background: url("../../image/firstSectionIMG.jpg") no-repeat center center;
+    background: url("../image/firstSectionIMG.jpg") no-repeat center center;
     width: 40vw;
     height: 80vh;
   }
@@ -333,9 +338,31 @@ nav ul li a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.whyus__container__items {
-  display: none;
+.whyus__container__items--images {
+  width: 80%;
+  position: relative;
+}
+
+.whyus__container__items--images img {
+  width: 100%;
+  height: 30vh;
+}
+
+.whyus__container__items--images .image-border {
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  width: 50%;
+  height: 98%;
+  z-index: -1;
+  border: 10px solid var(--primary-color);
 }
 /*# sourceMappingURL=style.css.map */
