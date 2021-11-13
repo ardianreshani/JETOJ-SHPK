@@ -331,6 +331,7 @@ nav ul li a {
 }
 
 .whyus__container {
+  margin: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -338,9 +339,6 @@ nav ul li a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -361,7 +359,7 @@ nav ul li a {
 }
 
 .whyus__container__items--images {
-  width: 90%;
+  width: 85%;
   position: relative;
   margin: 0 1rem;
 }
@@ -373,8 +371,8 @@ nav ul li a {
 
 .whyus__container__items--images .image-border {
   position: absolute;
-  top: -30px;
-  right: -30px;
+  top: -25px;
+  right: -25px;
   width: 50%;
   height: 98%;
   z-index: -1;
@@ -383,11 +381,146 @@ nav ul li a {
 
 .whyus__container__items--images .image-bordertwo {
   position: absolute;
-  top: -30px;
-  left: -15px;
+  top: -25px;
+  left: -25px;
   width: 50%;
   height: 98%;
   z-index: -1;
   border: 10px solid var(--primary-color);
+}
+
+@media screen and (min-width: 786px) {
+  .whyus__container__items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: 1;
+            flex-direction: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 2rem 0;
+  }
+  .whyus__container__items--images img {
+    height: 40vh;
+  }
+  .whyus__container__items:nth-child(3) .whyus__container__items--content {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .whyus__container__items:nth-child(3) .whyus__container__items--images {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+}
+
+.gallery__container {
+  margin: 0 1rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  height: 90vh;
+}
+
+.gallery__container .item1 {
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  background: url("../../image/gallery1.jpg") no-repeat center/cover;
+  width: 100%;
+  height: 100%;
+  grid-row-end: 2;
+  grid-column-end: 2;
+}
+
+.gallery__container .item2 {
+  background: url("../../image/gallery2.jpg") no-repeat center/cover;
+  width: 100%;
+  height: 100%;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-row-end: 3;
+  grid-column-end: 2;
+}
+
+.gallery__container .item3 {
+  background: url("../../image/gallery3.jpg") no-repeat center/cover;
+  width: 100%;
+  height: 100%;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-row-end: 4;
+  grid-column-end: 2;
+}
+
+.gallery__container .item4 {
+  background: url("../../image/gallery4.jpg") no-repeat center/cover;
+  width: 100%;
+  height: 100%;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-row-end: 4;
+  grid-column-end: 3;
+}
+
+.gallery__container .item5 {
+  background: url("../../image/whyusIMG2.jpg") no-repeat center/cover;
+  width: 100%;
+  height: 100%;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  grid-row-end: 3;
+  grid-column-end: 4;
+}
+
+.gallery__container .item6 {
+  background: url("../../image/firstSectionIMG.jpg") no-repeat center/cover;
+  width: 100%;
+  height: 100%;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  grid-row-end: 4;
+  grid-column-end: 4;
+}
+
+@media screen and (max-width: 786px) {
+  .gallery__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 230vh;
+  }
+  .item1,
+  .item2,
+  .item3,
+  .item4,
+  .item5,
+  .item6 {
+    height: 33vh;
+    margin-bottom: 0.5rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
