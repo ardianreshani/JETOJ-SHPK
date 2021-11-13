@@ -346,9 +346,24 @@ nav ul li a {
           align-items: center;
 }
 
+.whyus__container__items {
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+.whyus__container__items--content h2 {
+  font-weight: 500;
+  padding: 1.5rem 0;
+}
+
+.whyus__container__items--content p {
+  margin-bottom: 3rem;
+}
+
 .whyus__container__items--images {
-  width: 80%;
+  width: 90%;
   position: relative;
+  margin: 0 1rem;
 }
 
 .whyus__container__items--images img {
@@ -360,6 +375,16 @@ nav ul li a {
   position: absolute;
   top: -30px;
   right: -30px;
+  width: 50%;
+  height: 98%;
+  z-index: -1;
+  border: 10px solid var(--primary-color);
+}
+
+.whyus__container__items--images .image-bordertwo {
+  position: absolute;
+  top: -30px;
+  left: -15px;
   width: 50%;
   height: 98%;
   z-index: -1;
