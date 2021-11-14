@@ -1,6 +1,7 @@
 const hambugerMenu = document.querySelector(".hamburger");
 const menu = document.querySelector(".menu");
 const activeLink = document.querySelectorAll(".nav-link");
+const currentYear = document.querySelector("#current-year");
 
 hambugerMenu.addEventListener("click", () => {
   menu.classList.toggle("active");
@@ -14,3 +15,10 @@ activeLink.forEach((link) => {
     }
   });
 });
+
+function getYear() {
+  const date = new Date();
+  const year = date.getFullYear();
+  currentYear.innerText = year;
+}
+getYear();
