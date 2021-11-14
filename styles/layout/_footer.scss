@@ -44,6 +44,14 @@
       }
     }
   }
+  .copyright {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    p {
+      padding: 0.5rem 0;
+    }
+  }
 }
 .copyright {
   padding: 0.5rem 0;
